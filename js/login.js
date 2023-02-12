@@ -11,8 +11,8 @@ document
 
 		// DANGER: Do not verify email and password on client side. Send email nd password value into server end end then verify
 		if (email === "user@gmail.com" && password === "secret") {
-			console.log("valid user");
+			window.location.href = "bank.html";
 		} else {
-			console.log("invalid user");
+			alert("Invalid user");
 		}
 	});
