@@ -6,6 +6,12 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
 	const withdrawAmount = parseFloat(withdrawAmountString);
 	withdrawAmountValue.value = "";
 
+	// error handling
+	if (isNaN(withdrawAmountString)) {
+		alert("Please provide a valid number");
+		return;
+	}
+
 	// old withdraw value
 	const withdrawValue = document.getElementById("withdraw-value");
 	const withdrawString = withdrawValue.innerText;
