@@ -1,10 +1,21 @@
 // deposit btn handler
 document.getElementById("btn-deposit").addEventListener("click", function () {
+	// new deposit value
 	const depositAmountValue = document.getElementById("deposit-input");
-	const depositAmount = depositAmountValue.value;
+	const depositAmountString = depositAmountValue.value;
+	const depositAmount = parseFloat(depositAmountString);
 	depositAmountValue.value = "";
 
+	// old deposit value
 	const depositValue = document.getElementById("deposit-value");
-	const deposit = depositValue.innerText;
-	depositValue.innerText = depositAmount;
+	const depositString = depositValue.innerText;
+	const deposit = parseFloat(depositString);
+	depositValue.innerText = deposit + depositAmount;
+
+	// update total value
+	const total = document.getElementById("total-value");
+	const totalValueString = total.innerText;
+	const totalValue = parseFloat(totalValueString);
+
+	total.innerText = totalValue + depositAmount;
 });
