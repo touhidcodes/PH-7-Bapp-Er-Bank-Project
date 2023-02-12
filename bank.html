@@ -20,7 +20,7 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-sky-300 p-8 rounded-xl">
                     <h4 class="text-2xl text-center ">Deposits</h4>
-                    <h3 class="text-5xl">$0</h3>
+                    <h3 class="text-5xl">$ <span id="deposit-value">0</span></h3>
                 </div>
                 <div class="bg-violet-300 p-8 rounded-xl">
                     <h4 class="text-2xl text-center">Withdrawals</h4>
@@ -34,28 +34,29 @@
         </section>
         <!-- Deposits and Withdraws section -->
         <section class="mt-12">
-            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
                 <div class="bg-cyan-300 p-8 rounded-xl">
-                    <h4 class="text-2xl mb-3 ">Please Deposit</h4>
+                    <h4 class="text-2xl mb-3 text-white">Please Deposit</h4>
                     <div>
                         <input type="text" name="" id="deposit-input" class="w-9/12 block mb-3 px-3 py-2 rounded-md"
                             placeholder="Enter deposit amount">
                         <button id="btn-deposit"
-                            class="block bg-purple-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-purple-300">Submit</button>
+                            class="block bg-purple-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-purple-300 text-white">Submit</button>
                     </div>
                 </div>
                 <div class="bg-fuchsia-300 p-8 rounded-xl">
-                    <h4 class="text-2xl mb-3 ">Please Withdraw</h4>
+                    <h4 class="text-2xl mb-3 text-white">Please Withdraw</h4>
                     <div>
                         <input type="text" name="" id="withdraw-input" class="w-9/12 px-3 py-2 rounded-md"
                             placeholder="Enter withdrawal amount ">
                         <button id="btn-withdraw"
-                            class="block bg-rose-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-rose-300">Submit</button>
+                            class="block bg-rose-400 px-4 py-3 mt-5 font-medium text-white rounded-lg hover:bg-rose-300 text-white">Submit</button>
                     </div>
                 </div>
 
             </div>
         </section>
+        <script src="./js/diposit.js"></script>
     </main>
 </body>
 
